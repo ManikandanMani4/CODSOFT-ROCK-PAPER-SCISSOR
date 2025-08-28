@@ -1,0 +1,24 @@
+#Hello Everyone.  Today we learn about rock,paper scissors in the python program
+#Lets see the program
+
+#first import statement
+import random
+
+#Now create a whatever the chance have in the rock,paper scissor in a list
+choices=["rock","paper","scissors"]
+#Now create a user input statement
+user=input()
+#Now we whatever the chance to user use than]t taken by the choices
+
+compare=random.choice(choices)
+
+#Similarly Now Using condition statement If the user cheack compare it will execute you are equal score, elif the user give scissors compare to paper
+#then user gine rock compare to scissors then user give paper to compare rock   or else print you are lose the game
+if user == compare:
+    print("You are Equal Score")
+elif (user == "scissors" and compare =="paper") or (user == "rock" and compare == "scissors") or (user == "paper" and compare == "rock"):
+      print("You are Win")
+else:
+    print("You lose the game")
+
+    #Now run the Program
